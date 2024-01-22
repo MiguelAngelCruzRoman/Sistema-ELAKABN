@@ -1,0 +1,112 @@
+<!--Esta es la interfaz que jala pa' ver el aviso legal de la apliación web.
+	Está como hipervínculo de los link al final de la página-->
+</html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+  <title>Aviso Legal - Bar de Bebidas Alcohólicas</title>
+  <!-- Agrega los enlaces a los archivos CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    /* Estilos para el aviso legal */
+    .legal-notice {
+      margin: 50px auto;
+      max-width: 800px;
+    }
+
+    .legal-notice h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .legal-notice p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    footer.footer {
+  width: 100%;
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px 0;
+}
+
+footer.footer p,
+footer.footer a {
+  color: #fff;
+}
+  </style>
+</head>
+<body>
+  <header>
+		<nav class="navbar navbar-expand-md  navbar-dark bg-dark">
+      <ul></ul>
+      <a class="navbar-brand" href="PaginaInicial.html">
+        <img src="../Imagenes/logoChido.png" width="40px" height="40px">
+      </a>
+      <a class="navbar-brand"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active ">
+            <a class="nav-link" onclick="window.history.back();">Regresar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="legal-notice">
+      <h1>Aviso Legal</h1>
+      <p>El siguiente aviso legal establece los términos y condiciones de uso de la aplicación web del Bar "ELAKABN":</p>
+
+      <h3>1. Información general</h3>
+      <p>La aplicación web del Bar "ELAKABN" es propiedad y está operada por "ELAKABN".</p>
+
+      <h3>2. Edad legal para el consumo de alcohol</h3>
+      <p>La venta y el consumo de bebidas alcohólicas están prohibidos para menores de 18 años.</p>
+
+      <h3>3. Responsabilidad</h3>
+      <p>El Bar "ELAKABN" no se hace responsable de los daños o perjuicios derivados del consumo irresponsable de alcohol o del incumplimiento de las leyes aplicables.</p>
+
+      <h3>4. Marcas comerciales</h3>
+      <p>Todas las marcas comerciales y logotipos utilizados en la aplicación web del Bar "ELAKABN" son propiedad de sus respectivos dueños.</p>
+
+      <h3>5. Ley aplicable y jurisdicción</h3>
+      <p>Este aviso legal se rige por las leyes mexicana y cualquier disputa que surja en relación con este aviso legal estará sujeta a la jurisdicción exclusiva de los tribunales de la Ciudad de Puebla.</p>
+      <button type="submit" class="btn btn-primary" Onclick="window.history.back();">Regresar</button>
+    </div>
+  </div>
+
+  
+  <!-- Agrega el enlace al archivo JavaScript de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <br><br>
+  <footer class="footer bg-dark text-white">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6">
+			  <ul class="list-inline">
+				<li class="list-inline-item"><a href="../ArchivosEnComún/IntegrantesProyecto.html">&copy; 2023 Bar "ELAKABN". Todos los derechos reservados.</a></li>
+				<li class="list-inline-item"><a href="../ArchivosEnComún/IntegrantesProyecto.html">Conócenos</a></li>
+			  </ul>
+			</div>
+			<div class="col-md-6">
+			  <ul class="list-inline text-md-right">
+				<li class="list-inline-item"><a href="../ArchivosEnComún/TérminosUso.html">Términos de uso</a></li>
+				<li class="list-inline-item"><a href="../ArchivosEnComún/PoliticaPrivacidad.html">Política de privacidad</a></li>
+				<li class="list-inline-item"><a href="../ArchivosEnComún/AvisoLegal.html">Aviso legal</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	  </footer>	
+</body>
+</html>

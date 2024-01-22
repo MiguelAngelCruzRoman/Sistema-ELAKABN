@@ -1,0 +1,30 @@
+1,J&B,whisky,10.00,"Posee sabor dulce y suave con notas de manzana y pera. Su color es natural brillante y dorado. Su aroma es afrutado y fresco con notas de vainilla.",../Imagenes/JyB.jpg
+2,BUCHNAS'S,whisky,10.00,"Su sabor suave y afrutado, con notas de naranja y chocolate permiten servirlo en las rocas o con soda, acompañado de una rodaja de naranja.",../Imagenes/buchanans.jpg
+3,J WALKER RED,whisky,10.00,"Al paladar, se siente una dulzura frutal, como manzanas frescas o pera y notas de vainilla para después dar lugar a un final persistente y ahumado.",../Imagenes/j walker red.jpg
+4,TORRES X,brandy,10.00,"Es el brandy español más apreciado en el mundo, su aroma es clásico e intenso a roble, mientras que su bouquet denota un sabor a canela y vainilla.",../Imagenes/torres x.jpg
+5,TORRES V,brandy,10.00,"Brandy aromático con un intenso sabor de madera nogal y frutos secos, envejecido en barricas de roble, método solera, el cual activa la crianza activando su añejamiento, ofrece un final especiado con destellos de vainilla y canela.",../Imagenes/torres V.jpg
+6,CAPITAN MORGAN,brandy,10.00,"Notas de vainilla natural, azúcar morena, frutas secas y especias cálidas con toques de roble, se unen para crear un destilado perfectamente equilibrado con un acabado suave.",../Imagenes/capitan morgan.jpg
+7,FUNDADOR,brandy,10.00,"Sabor suave, dejando un sabor persistente. Limpio y con una fragancia de madera ensolerada de ricos matices vinosos, con toques de los vinos más ricos de Jerez.",../Imagenes/fundador.jpg
+8,MAGNO,brandy,8.00,"Brandy envejecido en botas de roble americano siguiendo el tradicional proceso de criaderas y soleras Vista De color caoba, luminoso y brillante.",../Imagenes/magno.jpg
+9,PRESIDENTE,brandy,5.00,"La entrada es ligeramente dulce con retrogusto medio. Preferido por su sabor suave, versatilidad y calidad.",../Imagenes/presidente.jpg
+10,DON PEDRO,brandy,7.00,"Con notas de cereza madura fresas y regaliz, sobre un fondo herbáceo. Dulce con ligera evolución a amargo y retrogusto prolongado.",../Imagenes/don pedro.jpg
+11,CAZADORES,tequila,5.00,"Tequila que en nariz muestra aromas a agave fresco combinado con notas cítricas de limón, lima y pomelo. En boca es suave y dulce con notas del agave.",../Imagenes/cazadores.png
+12,CORRALEJO,tequila,5.00,"es de sabor suave pero con un carácter fuerte, cuenta con una amplia gama de tonalidades propias de la madera del roble americano donde se reposa.",../Imagenes/corralejo.png
+13,HORNITOS,tequila,5.00,"Su sabor es a agave equilibrado con notas de hierbas y manzanas, ligeramente amaderado.",../Imagenes/hornitos.jpg
+14,JOSE CUERVO,tequila,5.00,"tequila suave y equilibrado, con notas de agave dulce y un toque de sabor a vainilla. Es perfecto para disfrutar solo o en una variedad de cócteles, como margaritas o palomas.",../Imagenes/jose cuervo.jpg
+15,JIMADOR,tequila,5.00,"tequila polifacético ya que sirve perfectamente para consumirse solo o bien para ser una buena base para cócteles o combinados con tequila. Una buena recomendación como tequila reposado de tiro para mezclar.",../Imagenes/jimador.jpg
+16,100 AÑOS AZUL,tequila,5.00,"Tequila Reposado 100 años Azul de excelente combinación de frutos y madera originando un sabor de roble tostado.",../Imagenes/100 años.jpg
+17,APLETON ESPECIAL,ron,5.00,"Tiene un aroma fino a toques de manzana y melaza, y un sabor delicado a barrica con notas de frutos secos.",../Imagenes/apleton especial.jpg
+18,BACARDI BLANCO,ron,5.00,"Tiene un sabor suave y aromático con notas florales y afrutadas (durazno, coco y plátano), así como un toque ligero de vainilla, limón y almendra para lograr un equilibrio perfecto.",../Imagenes/bacardi.jpg
+19,BARAIMA,ron,5.00,"Explosión de sabor a frambuesas frescas y su irresistible aroma, que incitan a crear refrescantes cócteles.",../Imagenes/baraima.png
+20,ABSOLUT AZUL,vodka,5.00,"Su sabor, es afrutado y sabroso. Podrás notar sin gran dificultad las deliciosas notas de frambuesas y bayas azules inundando tu paladar.",../Imagenes/absolut azul.jpg
+21,ABSOLUT CITRON,vodka,5.00,"Absolut Citron es suave y maduro, con toques frescos y afrutados de lima y limón y notas de cáscaras de limón.",../Imagenes/absolut citron.jpg
+22,ABSOLUT MANDARIN,vodka,5.00,"Es complejo, suave y maduro con sabor a mandarina y el carácter de la naranja mezclados con un toque de la cáscara de naranja.",../Imagenes/absolut mandrin.jpg
+23,SMIRNOFF,vodka,5.00,"Presenta un sabor natural de lima-limón. Ligeramente carbonatado, Smirnoff tiene un delicioso bocado cítrico, junto con una efervescencia refrescante.",../Imagenes/smirnoff.jpg
+24,NEGRA MODELO,cerveza,5.00,"Es una Cerveza tipo Pilsner con aroma a lúpulos ligeros, cuerpo ligero y sabor dulce.",../Imagenes/negra modelo.jpg
+25,CORONA/VICTORIA,cerveza,5.00,"En boca es moderadamente dulce y recuerda al sabor del cereal. Su amargor es limpio y ligero. Es una cerveza de cuerpo medio, fresca y equilibrada.",../Imagenes/corona.jpg
+26,ESPECIAL XTREME,cerveza,5.00,"Con su sabor robusto, a esta cerveza rubia dorada le gusta enseñar los dientes. Tiene un sabor marcado y potente a miel y fruta dulce, combinado con un amargor.",../Imagenes/especial xtreme.jpg
+27,AGUA PURIFICADA,otros,5.00,"Agua purificada de distintas marcas y sabores.",../Imagenes/agua purificada.jpg
+28,REFRESCO,otros,5.00,"El distintivo sabor a cola proviene en su mayoría de la mezcla de azúcar y aceites de naranja, limón y vainilla.",../Imagenes/refresco.jpg
+29,JUGO 1LT,otros,5.00,"Es refrescante con sabores cítricos como naranja, mandarina y limón, y hace más ricas tus comidas.",../Imagenes/jugo.jpg
+30,PAPAS,otros,5.00,"Papas preparadas en forma de bastones y freidas en aceite caliente hasta quedar doradas y crujientes para luego retirarlas del aceite y sazonarlas con sal.",../Imagenes/papas.jpg

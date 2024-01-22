@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--https://es.stackoverflow.com/questions/229244/c%c3%b3mo-hago-una-imagen-m%c3%a1s-peque%c3%b1a-en-java-script-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Menú del bar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .arriba { 
+    display: grid;
+    place-items: center;
+    }
+    footer.footer {
+			width: 100%;
+			background-color: #343a40;
+			color: #fff;
+			padding: 10px 0;
+		}
+
+		footer.footer p,
+		footer.footer a {
+			color: #fff;
+		}
+  </style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  .product-image {
+    height: 250px; /* Ajusta la altura deseada para las imágenes */
+    width:80px;
+    object-fit: cover;
+  }
+</style>
+</head>
+
+<body>
+  <!-- Barra de navegación -->
+  <!--navbar navbar-expand-lg navbar-dark bg-dark-->
+  <header>
+		<nav class="navbar navbar-expand-md  navbar-dark bg-dark">
+      <ul></ul>
+      <a class="navbar-brand" href="PaginaInicial.html">
+        <img src="../Imagenes/logoChido.png" width="40px" height="40px">
+      </a>
+      <a class="navbar-brand"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"href="servicios.html">Servicios extra</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="../">Salir</a>
+					</li>
+				</ul>
+      </div>
+    </nav>
+  </header>
+
+  <br><h1 align="center">Selecciona un tipo de bebida</h1>
+
+<div class="arriba">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" onclick="filterProducts('all')">TODOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="filterProducts('whisky')">WHISKY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="filterProducts('brandy')">BRANDY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="filterProducts('tequila')">TEQUILA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="filterProducts('ron')">RON</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="filterProducts('vodka')">VODKA</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="filterProducts('cerveza')">CERVEZA</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="filterProducts('otros')">OTROS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+  <div class="container mt-4">
+    <div id="product-list" class="row"></div>
+  </div>
+
+  <!-- Agregar los enlaces a los scripts de Bootstrap y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Datos de ejemplo (se pueden reemplazar con los productos reales)
+    var products = [
+      {
+        name: "J&B",
+        type: "whisky",
+        price: "$10",
+        description: "Posee sabor dulce y suave con notas de manzana y pera. Su color es natural, brillante, dorado. Su aroma es afrutado y fresco, con notas de vainilla.",
+        image: "../Imagenes/JyB.JPG"
+      },
+      {
+        name: "BUCHNAS'S",
+        type: "whisky",
+        price: "$10",
+        description: "Su sabor suave y afrutado, con notas de naranja y chocolate permiten servirlo en las rocas o con soda, acompañado de una rodaja de naranja.",
+        image: "../Imagenes/buchanans.png"
+      },
+      {
+        name: "J WALKER RED",
+        type: "whisky",
+        price: "$10",
+        description: "Al paladar, se siente una dulzura frutal, como manzanas frescas o pera y notas de vainilla para después dar lugar a un final persistente y ahumado.",
+        image: "../Imagenes/j walker red.jpg"
+      },
+      {
+        name: "TORRES X",
+        type: "brandy",
+        price: "$10",
+        description: "Es el brandy español más apreciado en el mundo, su aroma es clásico e intenso a roble, mientras que su bouquet denota un sabor a canela y vainilla.",
+        image: "../Imagenes/torres x.png"
+      },
+      {
+        name: "TORRES V",
+        type: "brandy",
+        price: "$10",
+        description: "Brandy aromático con un intenso sabor de madera nogal y frutos secos, envejecido en barricas de roble, método solera, el cual activa la crianza activando su añejamiento, ofrece un final especiado con destellos de vainilla y canela.",
+        image: "../Imagenes/torres V.jpg"
+      },
+      {
+        name: "CAPITAN MORGAN",
+        type: "brandy",
+        price: "$10",
+        description: "Notas de vainilla natural, azúcar morena, frutas secas y especias cálidas con toques de roble, se unen para crear un destilado perfectamente equilibrado con un acabado suave.",
+        image: "../Imagenes/capitan morgan.jpg"
+      },
+      {
+        name: "FUNDADOR",
+        type: "brandy",
+        price: "$10",
+        description: "Sabor suave, dejando un sabor persistente. Limpio y con una fragancia de madera ensolerada de ricos matices vinosos, con toques de los vinos más ricos de Jerez.",
+        image: "../Imagenes/fundador.jpg"
+      },
+      {
+        name: "MAGNO",
+        type: "brandy",
+        price: "$8",
+        description: "Brandy envejecido en botas de roble americano siguiendo el tradicional proceso de criaderas y soleras Vista De color caoba, luminoso y brillante.",
+        image: "../Imagenes/magno.jpg"
+      },
+      {
+        name: "PRESIDENTE",
+        type: "brandy",
+        price: "$5",
+        description: "La entrada es ligeramente dulce con retrogusto medio. Preferido por su sabor suave, versatilidad y calidad.",
+        image: "../Imagenes/presidente.jpg"
+      },
+      {
+        name: "DON PEDRO",
+        type: "brandy",
+        price: "$7",
+        description: "Con notas de cereza madura, fresas y regaliz, sobre un fondo herbáceo. Dulce con ligera evolución a amargo y retrogusto prolongado.",
+        image: "../Imagenes/don pedro.jpg"
+      },
+      {
+        name: "CAZADORES",
+        type: "tequila",
+        price: "$5",
+        description: " tequila que en nariz muestra aromas a agave fresco combinado con notas cítricas de limón, lima y pomelo. En boca es suave y dulce con notas del agave. ",
+        image: "../Imagenes/cazadores.png"
+      },
+      {
+        name: "CORRALEJO",
+        type: "tequila",
+        price: "$5",
+        description: "es de sabor suave pero con un carácter fuerte, cuenta con una amplia gama de tonalidades propias de la madera del roble americano donde se reposa. ",
+        image: "../Imagenes/corralejo.png"
+      },
+      {
+        name: "HORNITOS",
+        type: "tequila",
+        price: "$5",
+        description: "Su sabor es a agave equilibrado con notas de hierbas y manzanas, ligeramente amaderado.",
+        image: "../Imagenes/hornitos.jpg"
+      },
+      {
+        name: "JOSE CUERVO",
+        type: "tequila",
+        price: "$5",
+        description: " tequila suave y equilibrado, con notas de agave dulce y un toque de sabor a vainilla. Es perfecto para disfrutar solo o en una variedad de cócteles, como margaritas o palomas. ",
+        image: "../Imagenes/jose cuervo.jpg"
+      },
+      {
+        name: "JIMADOR",
+        type: "tequila",
+        price: "$5",
+        description: "tequila polifacético ya que sirve perfectamente para consumirse solo o bien para ser una buena base para cócteles o combinados con tequila. Una buena recomendación como tequila reposado de tiro para mezclar. ",
+        image: "../Imagenes/jimador.jpg"
+      },
+      {
+        name: "100 AÑOS AZUL",
+        type: "tequila",
+        price: "$5",
+        description: "Tequila Reposado 100 años Azul de excelente combinación de frutos y madera originando un sabor de roble tostado.",
+        image: "../Imagenes/100 años.jpg"
+      },
+      {
+        name: "APLETON ESPECIAL",
+        type: "ron",
+        price: "$5",
+        description: "Tiene un aroma fino a toques de manzana y melaza, y un sabor delicado a barrica con notas de frutos secos.",
+        image: "../Imagenes/apleton especial.jpg"
+      },
+      {
+        name: "BACARDI BLANCO",
+        type: "ron",
+        price: "$5",
+        description: "Tiene un sabor suave y aromático con notas florales y afrutadas (durazno, coco y plátano), así como un toque ligero de vainilla, limón y almendra para lograr un equilibrio perfecto",
+        image: "../Imagenes/bacardi.jpg"
+      },
+      {
+        name: "BARAIMA",
+        type: "ron",
+        price: "$5",
+        description: "Explosión de sabor a frambuesas frescas y su irresistible aroma, que incitan a crear refrescantes cócteles",
+        image: "../Imagenes/baraima.png"
+      },
+      {
+        name: "ABSOLUT AZUL",
+        type: "vodka",
+        price: "$5",
+        description: "Su sabor, es afrutado y sabroso. Podrás notar sin gran dificultad las deliciosas notas de frambuesas y bayas azules inundando tu paladar",
+        image: "../Imagenes/absolut azul.jpg"
+      },
+      {
+        name: "ABSOLUT CITRON",
+        type: "vodka",
+        price: "$5",
+        description: "Absolut Citron es suave y maduro, con toques frescos y afrutados de lima y limón y notas de cáscaras de limón.",
+        image: "../Imagenes/absolut citron.jpg"
+      },
+      {
+        name: "ABSOLUT MANDARIN",
+        type: "vodka",
+        price: "$5",
+        description: "Es complejo, suave y maduro con sabor a mandarina y el carácter de la naranja mezclados con un toque de la cáscara de naranja.",
+        image: "../Imagenes/absolut mandrin.jpg"
+      },
+      {
+        name: "SMIRNOFF",
+        type: "vodka",
+        price: "$5",
+        description: "Presenta un sabor natural de lima-limón. Ligeramente carbonatado, Smirnoff tiene un delicioso bocado cítrico, junto con una efervescencia refrescante.",
+        image: "../Imagenes/smirnoff.jpg"
+      },
+      {
+        name: "NEGRA MODELO",
+        type: "cerveza",
+        price: "$5",
+        description: "Es una Cerveza tipo Pilsner con aroma a lúpulos ligeros, cuerpo ligero y sabor dulce.",
+        image: "../Imagenes/negra modelo.jpg"
+      },
+      {
+        name: "CORONA/VICTORIA",
+        type: "cerveza",
+        price: "$5",
+        description: "En boca es moderadamente dulce y recuerda al sabor del cereal. Su amargor es limpio y ligero. Es una cerveza de cuerpo medio, fresca y equilibrada.",
+        image: "../Imagenes/corona.jpg"
+      },
+      {
+        name: "ESPECIAL XTREME",
+        type: "cerveza",
+        price: "$5",
+        description: "Con su sabor robusto, a esta cerveza rubia dorada le gusta enseñar los dientes. Tiene un sabor marcado y potente a miel y fruta dulce, combinado con un amargor",
+        image: "../Imagenes/especial xtreme.jpg"
+      },
+      {
+        name: "AGUA PURIFICADA",
+        type: "otros",
+        price: "$5",
+        description: "Agua purificada de distintas marcas y sabores",
+        image: "../Imagenes/agua purificada.jpg"
+      },
+      {
+        name: "REFRESCO",
+        type: "otros",
+        price: "$5",
+        description: "El distintivo sabor a cola proviene en su mayoría de la mezcla de azúcar y aceites de naranja, limón y vainilla. ",
+        image: "../Imagenes/refresco.jpg"
+      },
+      {
+        name: "JUGO 1LT",
+        type: "otros",
+        price: "$5",
+        description: "Es refrescante con sabores cítricos como naranja, mandarina y limón, y hace más ricas tus comidas. ",
+        image: "../Imagenes/jugo.jpg"
+      },
+      {
+        name: "PAPAS",
+        type: "otros",
+        price: "$5",
+        description: "Papas preparadas en forma de bastones y freidas en aceite caliente hasta quedar doradas y crujientes para luego retirarlas del aceite y sazonarlas con sal.",
+        image: "../Imagenes/papas.jpg"
+      }
+    ];
+
+    // Función para filtrar y mostrar los productos por
+    function filterProducts(type) {
+      var productList = document.getElementById("product-list");
+      productList.innerHTML = ""; // Limpiar la lista de productos antes de agregar los nuevos
+      if (type === "all") {
+        // Mostrar todos los productos
+        for (var i = 0; i < products.length; i++) {
+          addProductToDOM(products[i]);
+        }
+      } else {
+        // Filtrar y mostrar los productos según el tipo seleccionado
+        for (var i = 0; i < products.length; i++) {
+          if (products[i].type === type) {
+            addProductToDOM(products[i]);
+          }
+        }
+      }
+    }
+
+    // Función para agregar un producto al DOM
+
+    function addProductToDOM(product) {
+      var productList = document.getElementById("product-list");
+
+      var col = document.createElement("div");
+      col.className = "col-lg-3 col-md-6 mb-4";
+
+      var card = document.createElement("div");
+      card.className = "card h-100";
+
+      var img = document.createElement("img");
+      img.className = "card-img-top product-image mx-auto";
+      img.src = product.image;
+      img.alt = product.name;
+
+      var cardBody = document.createElement("div");
+      cardBody.className = "card-body";
+
+      var title = document.createElement("h5");
+      title.className = "card-title";
+      title.textContent = product.name;
+
+      var price = document.createElement("p");
+      price.className = "card-text";
+      price.textContent = "Precio: " + product.price;
+
+      var description = document.createElement("p");
+      description.className = "card-text";
+      description.textContent = product.description;
+
+      cardBody.appendChild(title);
+      cardBody.appendChild(price);
+      cardBody.appendChild(description);
+
+      card.appendChild(img);
+      card.appendChild(cardBody);
+
+      col.appendChild(card);
+
+      productList.appendChild(col);
+    }
+
+    // Mostrar todos los productos por defecto
+    filterProducts("all");
+  </script>
+
+<footer class="footer bg-dark text-white">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-6">
+      <ul class="list-inline">
+      <li class="list-inline-item"><a href="../ArchivosEnComún/IntegrantesProyecto.html">&copy; 2023 Bar "ELAKABN". Todos los derechos reservados.</a></li>
+      <li class="list-inline-item"><a href="../ArchivosEnComún/IntegrantesProyecto.html">Conócenos</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <ul class="list-inline text-md-right">
+      <li class="list-inline-item"><a href="../ArchivosEnComún/TérminosUso.html">Términos de uso</a></li>
+      <li class="list-inline-item"><a href="../ArchivosEnComún/PoliticaPrivacidad.html">Política de privacidad</a></li>
+      <li class="list-inline-item"><a href="../ArchivosEnComún/AvisoLegal.html">Aviso legal</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+  </footer>	 
+</body>
+
+</html>
